@@ -13,10 +13,10 @@ from typing import List
 
 def getLargest(array:List[int]) -> int:
     """
-    :type nums: List[int]
+    :type array: List[int]
     :rtype: int
     """
-    
+
     largest = array[0]
     for i in range(len(array)):
         if (array[i] > largest):
@@ -27,3 +27,9 @@ def getLargest(array:List[int]) -> int:
 if __name__ == '__main__':
     print(getLargest([2,5,1,3,0]))
     print(getLargest([8,10,5,7,9]))
+
+"""
+Complexity:
+Time Complexity: O(N)
+Space Complexity: O(1)
+"""
